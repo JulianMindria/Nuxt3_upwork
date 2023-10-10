@@ -3,13 +3,6 @@
         <div class="max-w-screen-2xl items-center mx-auto">
             <nav class="flex justify-between mt-4 mx-4">
                 <div class="md:hidden gap-x-4 flex items-center">
-                    <!-- <div className="dropdown dropdown-bottom">
-                        <label tabIndex={0}><i class="fa fa-bars fa-lg"></i></label>
-                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 mt-8 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 2</a></li>
-                        </ul>
-                    </div> -->
                     <dropdown />
                     <img class="w-auto h-6" :src="Logo" alt="">
                 </div>
@@ -35,13 +28,7 @@
                     </select>
                 </div>
                 <div class="flex items-center gap-x-6 md:flex-row flex-row-reverse">
-                    <div className="lg:hidden dropdown dropdown-end">
-                    <label tabIndex={0}><i class="fa fa-search"></i></label>
-                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 mt-8 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
-                    </ul>
-                    </div>
+                    <burger />
                     <div class="flex gap-x-4">
                         <button class="md:block hidden">login</button>
                         <button class="md:bg-primary bg-white h-12 rounded-full w-24 md:text-white text-black">Sign Up</button>
@@ -137,4 +124,5 @@ import Image4 from "../assets/microsoft.svg"
 import Image5 from "../assets/bissell.svg"
 import 'font-awesome/css/font-awesome.min.css';
 import dropdown from '../components/dropdown.vue';
+import burger from '../components/burger.vue';
 </script>
